@@ -1,4 +1,11 @@
 package com.example.orderservice.dto
 
-class StockUpdateRequest {
+data class StockUpdateRequest(
+    val quantity: Int,
+    val operation: StockOperation
+)
+
+enum class StockOperation {
+    INCREASE,
+    DECREASE
 }

@@ -1,4 +1,5 @@
 package com.example.orderservice.exception
 
-class ProductNotFoundException {
-}
+class ProductNotFoundException(
+    message: String
+) : RuntimeException(message)

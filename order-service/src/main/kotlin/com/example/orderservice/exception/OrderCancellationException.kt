@@ -1,4 +1,5 @@
 package com.example.orderservice.exception
 
-class OrderCancellationException {
-}
+class OrderCancellationException(
+    message: String
+) : RuntimeException(message)

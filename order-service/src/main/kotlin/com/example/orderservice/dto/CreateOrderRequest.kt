@@ -1,4 +1,7 @@
 package com.example.orderservice.dto
 
-class CreateOrderRequest {
-}
+data class CreateOrderRequest(
+    val userId: Long,
+    val productId: Long,
+    val quantity: Int
+)
