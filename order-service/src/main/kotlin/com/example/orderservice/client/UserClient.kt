@@ -18,3 +18,4 @@ interface UserClient {
         @PathVariable id: Long
     ): UserResponse
 }
+//userclient
